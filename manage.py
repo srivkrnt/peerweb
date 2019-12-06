@@ -59,7 +59,7 @@ def sync_peer_list(ip):
         synced = 1
     else:
         synced = 2
-    return render_template('peers.html', synced = synced, peers = peers, status = status)
+    return render_template('peers.html', port = port, synced = synced, peers = peers, status = status)
 
 @app.route('/status')
 def status():
