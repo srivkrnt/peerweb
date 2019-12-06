@@ -1,0 +1,105 @@
+body, html{
+  background-color: #F1F2F7;
+  height:100%;
+}
+.navbar{
+  background-color: white;
+  overflow: hidden;
+}
+
+.get-started-button{
+  background-color:#4152A1;
+  border-radius: 5px;
+}
+
+.get-started-banner{
+  background-color:white;
+  border-radius: 5px;
+  display: block;
+  padding: .5rem 1rem;
+  text-decoration: none !important;
+  color: #4152A1 !important;
+}
+
+.get-started-banner : hover{
+  color:red;
+}
+
+a{
+  color:black !important;
+  text-decoration: none !important;
+}
+.logo_title{
+  padding-top: 3px;
+  font-family: 'Pacifico', cursive;
+}
+.nav-item > a{
+  color: black !important;
+  font-family: 'Comfortaa', cursive;
+}
+
+.get-started-button > a{
+  color:white !important;
+  font-family: 'Comfortaa', cursive;
+}
+
+.demo-banner{
+  background-color: #4152A1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  height: 55%;
+  color: white !important;
+  font-family: 'Comfortaa', cursive;
+}
+.team-hub{
+  display: flex;
+  background-image: linear-gradient(to right, #4152A1, #4152A1, #5182D1 );
+  flex-direction:column;
+  padding-top: 5%;
+  height: 60%;
+  color: white !important;
+  font-family: 'Comfortaa', cursive;
+}
+.whats-new{
+  display: flex;
+  flex-direction:column;
+  height: 60%;
+  padding-top: 5%;
+  color: black !important;
+  font-family: 'Comfortaa', cursive;
+}
+
+.whats-new > header, .team-hub > header {
+  text-align: center;
+}
+
+.footer-content{
+  background: white !important;
+  padding-top: 3% !important;
+  clear: both;
+}
+.footer-link{
+  line-height: 1.8;
+}
+.footer-link:hover{
+  color: #4152A1 !important;
+}
+
+.footer-contact{
+  background-color: #F1F2F7 !important;
+}
+.reg-detail{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20%;
+  padding-top: 5%;
+  font-family: 'Comfortaa', cursive;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}​

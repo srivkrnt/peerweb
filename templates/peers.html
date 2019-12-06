@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+{% block content %}
+    {% for id in range(0, peers | length) %}
+      {% if status[id] == "Dead" %}
+        <li style="color:red;margin-left:20px;font-size:1.5em"> {{ peers[id] }} {{status[id]}}</li>
+      {% else %}
+        <li style="color:green;margin-left:20px;font-size:1.5em"> {{ peers[id] }} {{status[id]}}</li>
+      {% endif %}
+    {% endfor %}
+{% endblock %}
