@@ -8,6 +8,8 @@
 {% block content %}
   <h1>&nbsp;fileList </h1>
     {% for id in range(0, fileList | length) %}
-        <li style="color:green;margin-left:20px;font-size:1.5em">{{ fileList[id] }} </li>
+        <li style="color:green;margin-left:20px;font-size:1.5em">
+          <a href="http://{{MY_IP}}:{{port}}/files/get/{{fileList[id]}}">{{ fileList[id] }} </a>
+        </li>
     {% endfor %}
 {% endblock %}

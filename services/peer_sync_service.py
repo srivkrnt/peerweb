@@ -13,7 +13,7 @@ def sync_peer_data(remote_ip):
         if resp.status_code == 200:
             remote_peer_list = json.loads(resp.text)
     except:
-        return {"failed" : "remote_ip_dead"}
+        return False
 
     for ip, status in remote_peer_list.items():
         if ip != MY_IP:
@@ -32,7 +32,7 @@ def sync_peer_data(remote_ip):
             updateEndpoint = 'http://' + remote_ip + ':5000' + '/peers/' + ip + '/' + status
             updateStatus = requests.post(updateEndpoint)
 
-    return {"success" : "Synced"}
+    return True
 
 def get_peer_data():
     with open('resources/peers.json') as data:
