@@ -15,8 +15,6 @@ def sync_peer_data(remote_ip):
     except:
         return {"failed" : "remote_ip_dead"}
 
-    print(remote_peer_list)
-    
     for ip, status in remote_peer_list.items():
         if ip != MY_IP:
             updateEndpoint = 'http://' + MY_IP + ':5000' + '/peers/' + ip + '/' + status
